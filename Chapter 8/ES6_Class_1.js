@@ -63,7 +63,7 @@ class VehicleCl{
         this.wheels = wheels;
     }
     // methods
-    getDetails(){
+    getDetails(){ 
         console.log(`The ${this.name} is ${this.color} in color.
             It has ${this.wheels} wheels`);
     }

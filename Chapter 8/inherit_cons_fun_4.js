@@ -3,28 +3,37 @@ function Vehicle(name, color, wheels) {
   this.color = color;
   this.wheels = wheels;
 }
-Vehicle.prototype.getVehDetails = function () {
+Vehicle.prototype.getVehDetails = function ()
+ {
   console.log(
-    `Name: ${this.name}\nColor: ${this.color}\nWheels: ${this.wheels}`
+    `Name: ${this.name}\nColor:
+     ${this.color}\nWheels: ${this.wheels}`
   );
 };
 
-function Car(color, brand, seats) {
-  Vehicle.call(this, 'car', 'Blue', 4);
+function Car(name,color,wheels, brand, seats) {
+  Vehicle.call(this,name,color,wheels);
   this.brand = brand;
   this.seats = seats;
 }
-
 Car.prototype = Object.create(Vehicle.prototype);
-
-Car.prototype.getDetails = function () {
+ Car.prototype.getDetails = function () {
   console.log(`
-      The ${this.color} ${this.name} is of ${this.brand} company.
-      It has seating for ${this.seats} people`);
+      The ${this.color} ${this.name}
+       is of ${this.brand} company.
+      It has seating for ${this.seats} 
+      people`);
 };
 
-const car1 = new Car('Black', 'Audi', 5);
+const car1 = new Car('audi','red',4,'audi','4 seater');
+console.log(car1.name);
+console.log(car1.color);
+console.log(car1.wheels);
+console.log(car1.brand);
+console.log(car1.seats);
+console.log(car1.seats);
+car1.getVehDetails();
 car1.getDetails();
 console.log(car1);
 console.log(car1.__proto__);
-car1.getVehDetails();
+

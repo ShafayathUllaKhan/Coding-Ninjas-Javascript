@@ -37,7 +37,7 @@ console.log(cities);// (4) ['a','b','e','d']
 
 // Adding an element
 
-// Push returns length of array
+// Push and unshift returns length of array
 
 const teams = ["CSK","RCB","MI","LSG"];
 teams.push("GT");
@@ -46,7 +46,7 @@ console.log(teams.length);
 
 //Unshift
 let unshift = teams.unshift("KKR");
-console.log(unshift);
+console.log(unshift);//5
 console.log(teams);// kkr will be added in the first
 
 
