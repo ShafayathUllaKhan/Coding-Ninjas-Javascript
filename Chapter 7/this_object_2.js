@@ -62,6 +62,7 @@ console.log(movie22);
 // construction name will always start with caps letter
 
 function Movie(title, year){
+    //console.log(this);
     this.title = title;
     this.year = year;
 
