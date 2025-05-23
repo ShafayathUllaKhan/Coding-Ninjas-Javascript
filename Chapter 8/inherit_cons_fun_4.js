@@ -25,7 +25,7 @@ Car.prototype = Object.create(Vehicle.prototype);
       people`);
 };
 
-const car1 = new Car('audi','red',4,'audi','4 seater');
+let car1 = new Car('audi','red',4,'audi','4 seater');
 console.log(car1.name);
 console.log(car1.color);
 console.log(car1.wheels);
@@ -37,3 +37,9 @@ car1.getDetails();
 console.log(car1);
 console.log(car1.__proto__);
 
+car1 = Object.create(Vehicle.prototype);
+console.log(car1);
+
+// so the basic difference in car.prototype is car is a function constructor
+// so you have to give car.prototype and for object 
+// you can give car = Object.create(Vehicle.prototype);
