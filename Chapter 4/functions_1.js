@@ -93,7 +93,7 @@ console.log(teams);//(4) ['CSK', 'RCB', 'MI', 'LSG']
 // splice is used to delete the element in array or add element
 // splice take 4 arguments
 console.log(teams);
-console.log(teams.splice(2,0,"GT"));
+console.log(teams.splice(2,0,"GT"));// returns empty array
 // index deletecount insertvalue
 console.log(teams);
 

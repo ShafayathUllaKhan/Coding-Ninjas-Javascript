@@ -19,7 +19,7 @@ console.log(10 / 2); //5
 console.log(10 % 2); // 0
 console.log(11 % 2); // 1
 
-// 3. More Arithematic Operators (++, --, +, -, **)
+// 3. More Arithematic Operators or unary operator (++, --, +, -, **)
 let i = 2;
 // let i = +2;
 // let i = -2;

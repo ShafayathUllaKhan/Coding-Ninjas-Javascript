@@ -1,6 +1,6 @@
 // Function in js
 
-// function declaration
+// function declaration or function statement
 function sum(a,b){
     return a + b;
 }

@@ -36,6 +36,9 @@ console.log(+a);// 123
 let b = "123shafayath";
 console.log(+b);// NaN
 
+let c = "123";
+console.log(-c);// 123
+
 
 // parseFloat();
 console.log(parseFloat("12345.45f"));// 12345.45
