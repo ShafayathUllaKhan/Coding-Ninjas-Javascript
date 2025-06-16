@@ -190,3 +190,105 @@ console.log(f);
 const [as,er,...[,ba,li]] = fruits;
 
 console.log(li);
+
+
+// prototype understanding
+
+const a = [1,2,3];
+
+console.log(a.__proto__.__proto__);
+
+class sample{
+    a = 10;
+    getdetails(){
+        console.log(a);
+    }
+}
+
+const obj1 = new sample();
+
+console.log(obj1.__proto__.__proto__);
+
+
+
+const str = 'str';
+
+console.log(str.__proto__);
+console.log(str.__proto__.__proto__.__proto__);
+
+
+function sample1(){
+    console.log(10);
+}
+
+// variable --> prototype --> prototype
+// function and arrow --> prototype(native code)
+// object --> just prototype
+// factory function --> just parent protoype
+// construction function --> you will be having 2 prototypes one of constructor and parent and methods are not in prototype
+// class --> methods are in prototype --> object prototype
+// Object.create(carmain); --> add method in new  prototype or create a new prototype and add nethod there 
+// Object.assign() --> give you combined onject and will be having parent prototype
+
+const carmain = {
+    getdetials(){
+        console.log(10);
+    }
+}
+
+let cardup = {
+   a:10
+};
+
+cardup = Object.create(carmain); // adds the method in new prototype and no constructor in that prototype and function also have a prototype of constructor named function and a parent object
+
+//car1 prototye(the parent or the last object) will have car method no your understanding is wrong it create a new prototype and add there so after this you will be having 2 prototypes
+
+console.log(cardup);
+
+
+function objectsample(){
+    return {
+        a : 10,
+        getdetails(){
+            console.log(a);
+        }
+    }
+}
+
+const obj2 = objectsample();
+console.log(obj2); // you will be having a(variable) and method and a parent prototype
+
+
+function School(){
+        this.a = 10,
+        this.getdetails= function (){
+            console.log(a);
+        }
+        console.log(this); // points to obj3 
+}
+
+
+const obj3 = new School();
+console.log(obj3);// give you variable and method and protoype object were you will have consructor school and then the parent object
+
+const target1 = {
+    a : 10,
+    getdetails(){
+        console.log(a);
+    }
+}
+
+
+const source1 = {
+    a : 20,
+    getdetails1(){
+        console.log(a);
+    }
+}
+
+const newobject = Object.assign(target1,source1);
+
+console.log(newobject); // in this you will get a variable of 20 value and 2 methods and a parent prototype
+
+// please focus on constructor class and function constructor have constructor so you will be having 2 prototypes one for constructor and one for parent who does have no constructor the constructor will be object and have only one prototype

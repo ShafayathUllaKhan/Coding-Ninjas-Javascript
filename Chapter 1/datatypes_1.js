@@ -54,6 +54,6 @@ let num3 = Infinity;
 console.log(12/0);// Infinity
 console.log(188/Infinity);
 
-// and we important point in function tyhe variable 
+// and very important point in function any type variable 
 // let it be var const and let all are hoisted in local scope 
 // please remember this important point

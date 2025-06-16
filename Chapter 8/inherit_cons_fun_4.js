@@ -43,3 +43,28 @@ console.log(car1);
 // so the basic difference in car.prototype is car is a function constructor
 // so you have to give car.prototype and for object 
 // you can give car = Object.create(Vehicle.prototype);
+
+
+// protected 
+// child class will get public methods from parent protedted methods
+class sampleofprotected{
+    _variable = 10;
+
+    _functionofprotected(){
+      console.log('protected functiopn');
+    }
+}
+
+const object1 = new sampleofprotected();
+
+
+console.log(object1._variable);
+object1._functionofprotected();
+
+class sample1 extends sampleofprotected{
+   
+}
+
+const object2 = new sample1();
+console.log(object2._variable);
+object2._functionofprotected();

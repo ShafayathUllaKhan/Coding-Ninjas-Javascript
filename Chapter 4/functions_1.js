@@ -38,6 +38,7 @@ console.log(cities);// (4) ['a','b','e','d']
 // Adding an element
 
 // Push and unshift returns length of array
+// please remmeber this point
 
 const teams = ["CSK","RCB","MI","LSG"];
 teams.push("GT");

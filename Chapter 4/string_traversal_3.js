@@ -24,7 +24,7 @@ console.log(str1.replace('is', 'was'));// first occurance
 
 
 // replaceAll()
-console.log(str1.replace('is', 'was'));
+console.log(str1.replaceAll('is', 'was'));
 
 
 // trim()
@@ -71,3 +71,6 @@ console.log(student.name);// Alexa
 console.log(student["name"]);// Alexa
 console.log(student[100]); // hundered
 student.show();
+
+let sample = 'name';
+console.log(student[sample]);
