@@ -292,3 +292,6 @@ const newobject = Object.assign(target1,source1);
 console.log(newobject); // in this you will get a variable of 20 value and 2 methods and a parent prototype
 
 // please focus on constructor class and function constructor have constructor so you will be having 2 prototypes one for constructor and one for parent who does have no constructor the constructor will be object and have only one prototype
+
+
+// note constructor function method will have a prototype inside that there will be object prototype basically constructot function and class methods will have 2 prototypes
