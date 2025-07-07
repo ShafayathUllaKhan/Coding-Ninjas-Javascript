@@ -134,7 +134,7 @@ p.addEventListener('mouseup',()=>{
 })
 
 document.body.addEventListener("keydown",(event)=>{
-    console.log("keypressed");
+    console.log("keypressed");// no enter and tab
     console.log(event.type);
     console.log(event.key);
     console.log(event.keyCode);

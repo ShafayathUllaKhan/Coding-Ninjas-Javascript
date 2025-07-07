@@ -81,7 +81,7 @@ const user1 = {
 };
 //Deep Copy and shallow Copy
 
-//Deep Copy
+//Deep Copy can be done by using only below method
 
 const user2 = JSON.parse(JSON.stringify(user1));
 
@@ -89,6 +89,10 @@ user2.username = 'Harry';
 user2.marks.maths = 10;
 console.log(user2);
 console.log(user1);
+
+
+
+// shallow copy 
 
 // const user2 = user1;
 // console.log(user1);
