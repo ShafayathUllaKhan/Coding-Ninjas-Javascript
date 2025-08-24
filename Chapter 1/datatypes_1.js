@@ -57,3 +57,17 @@ console.log(188/Infinity);
 // and very important point in function any type variable 
 // let it be var const and let all are hoisted in local scope 
 // please remember this important point
+
+//Exactly ✅
+
+//Every return inside the callback updates the accumulator (acc) for the next round.
+
+//Only the very last return value is sent back as the final result of .reduce().
+
+//All the earlier returns never go directly to your sum variable — they just pass the updated value forward to the next callback run.
+
+//Think of it like a relay race:
+
+//Each runner (iteration) takes the baton (acc), changes it (return), and passes it to the next runner.
+
+//The final runner's baton is the result you get from .reduce().
